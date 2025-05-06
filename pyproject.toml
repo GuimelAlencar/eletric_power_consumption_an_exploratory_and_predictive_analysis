@@ -1,0 +1,19 @@
+[project]
+name = "eletric-power-consumption-an-exploratory-and-predictive-analysis"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Guímel Alencar",email = "guimel.alencar@proton.me"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "eletric_power_consumption_an_exploratory_and_predictive_analysis", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
