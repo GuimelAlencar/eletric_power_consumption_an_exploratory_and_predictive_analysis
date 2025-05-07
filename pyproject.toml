@@ -8,6 +8,8 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "dotenv (>=0.9.9,<0.10.0)",
+    "kaggle (>=1.7.4.2,<2.0.0.0)"
 ]
 
 [tool.poetry]

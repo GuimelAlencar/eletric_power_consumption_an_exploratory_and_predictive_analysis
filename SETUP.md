@@ -74,7 +74,23 @@ git add .
 git commit -m new_project
 ```
 
+## 3. Data_pipeline
 
+Criação de 3 novos módulos para gerenciar:
+
+### 3.1. Importação dos dados.
+
+poetry add dotenv kaggle
+
+poetry add --group dev pytest pytest-mock
+
+
+```python
+
+```
+
+### 3.2. Processamento dos dados. 
+### 3.3. Validação dos dados.
 
 
 
