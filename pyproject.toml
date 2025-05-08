@@ -16,6 +16,12 @@ dependencies = [
 packages = [{include = "eletric_power_consumption_an_exploratory_and_predictive_analysis", from = "src"}]
 
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+pytest-mock = "^3.14.0"
+pyyaml = "^6.0.2"
+pytest-cov = "^6.1.1"
+
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"

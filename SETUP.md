@@ -80,14 +80,21 @@ Criação de 3 novos módulos para gerenciar:
 
 ### 3.1. Importação dos dados.
 
+Para a criação do importer
 poetry add dotenv kaggle
 
-poetry add --group dev pytest pytest-mock
+Para os testes do importer
+poetry add --group dev pytest pytest-mock pyyaml pytest-cov
 
-
-```python
-
+criação do .coveragerc na raiz do projeto com:
 ```
+[run]
+data_file = ./tests/.coverage
+```
+
+Execução do teste com:
+poetry run pytest tests/test_importer.py -v --cache-dir=tests/.pytest_cache --cov=src/data_pipeline --cov-report=term-missing
+
 
 ### 3.2. Processamento dos dados. 
 ### 3.3. Validação dos dados.
